@@ -16,6 +16,13 @@ class Stack:
 
         # Update the top of the stack and set next to previous top.
         pass
+    
+        if self.isEmpty():
+            return "stack is Empty"
+        node = Node(value)
+        Node.next = self.head.next
+        self.head.next = node
+        self.size += 1
 
 
     def pop(self):
@@ -30,21 +37,36 @@ class Stack:
 
         # Return the value of the node at the top of the stack
         pass
+        if self.isEmpty():
+            return "Stack is Empty"
+        remove = self.head
+        self.head = self.head.next
+        self.head.next = remove.next
+        self.size -= 1
+        delete(remove)
 
 
     def isEmpty(self):
         # Is the stack empty?
         pass
+        if self.isEmpty():
+            return "Stack is Empty"
+        return self.head(value)
 
 
     def size(self):
         # Is the stack empty?
         pass
+        print (self.size)
 
 
     def printStack(self):
         # Is the stack empty?
         pass
+        node = self.head
+        while node.next != NULL:
+            print (node(value))
+            node = node. next
 
 
 
