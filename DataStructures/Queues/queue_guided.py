@@ -64,9 +64,13 @@ def main():
     for i in myarr:
         myQueue.enqueue(i)
     
-
+    # should output 1
     print(myQueue.peek())
+    
+    # should be size 9
     print(myQueue.size())
+    
+    #returns false
     print(myQueue.isEmpty())
 
 
